@@ -1,0 +1,38 @@
+---
+title: Teaching
+sectionTeaching: true
+---
+
+* Teaching
+
+Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology and Discrete Mathematics.
+
+** 2019-2020
+
+- Second semester: **Cryptology (L2)**. Teaching assistant in the course "Introduction à la cryptologie" (Licence 3, Sorbonne Université), organized by [[https://www-pequan.lip6.fr/~vmm/en/coordonnees.php][Valérie Ménissier-Morain]] and [[https://www-polsys.lip6.fr/~berthomieu/][Jeremy Berthomieu]].
+  - Most of my teaching materials are available on [[https://moodle-sciences.upmc.fr/moodle-2019/][moodle]] (videos, saved blackboard, QCM...).
+  - You can find [[https://git.colisson.me/leo/2020_-_crypto_correction_td][here]] a correction I made during the strikes.
+- First semester: **Discrete Mathematics (L2)**. Teaching assistant in the course "Mathématiques Discrètes" (Licence 2, Sorbonne Université), organized by [[https://pages.lip6.fr/Beatrice.Berard/][Béatrice Bérard]].
+  - You can find [[https://git.colisson.me/leo/2019_-_Corriges_maths_discretes][here]] a few corrections I made.
+  - [[https://git.colisson.me/leo/methodologie_preuve][Here]] is a general method where I explain how you can write formally a proof without even thinking (almost…).
+  - The official page of the course is available [[https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2019/ue/LU2IN005-2019oct/][here]].
+
+** 2018-2019
+
+- Second semester: **Cryptology (L2)**. Teaching assistant in the course "Introduction à la cryptologie" (Licence 3, Sorbonne Université), organized by [[https://www-pequan.lip6.fr/~vmm/en/coordonnees.php][Valérie Ménissier-Morain]] and [[https://www-polsys.lip6.fr/~berthomieu/][Jeremy Berthomieu]].
+- First semester: **Python (L2)**. Teaching assistant in the course (Licence 2 "[[https://www.polytech.sorbonne-universite.fr/formations/agroalimentaire][AGRAL]]", Polytech), organized by [[http://xavier.tannier.free.fr/][Xavier Tannier]].
+
+** Tutoring
+
+I'm also tutoring a high-school student since 2017 to prepare him to some very important and competitive national exams in Israël (he is now, in 2020, starting his first year at the university). I teached him notably:
+- High-level programming (Python, C, Javascript, PHP, SQL, Ocaml, Assembly), including the following paradigms:
+  - Functional Programming
+  - Object-Oriented Programming
+  He also learnt how to develop a website using the Django framework.
+- Low-level programming and system architecture (C, Assembly). My student did several projects under my supervision:
+  - a compiler, compiling a C-- language into 64 bit assembly. He started from the template given in [[http://www.lsv.fr/~goubault/CoursProgrammation/MiniC1/minic.html][this course]], that provides a parser, and his goal was to produce the 64 bit assembly code from the AST (Abstract syntax tree).
+  - a mini-OS: he learnt how to code an OS from scratch, that could boot in real mode (16 bits). We saw how to use interruptions to draw on the screen, how to create custom interruptions/traps, and how to use =in= / =out= assembly commands to control the hardware.
+  - he also learnt how a computer is built, starting from the laws of physics, continuing with the transistors, building fundamental circuits from them, and implementing (with pen and papers) a simple Von Neumann machine.
+- Network: he learnt how famous protocols works (TCP, UDP), and how they are related with the OSI model.
+- Security: he learnt most famous attack vectors and tried to practice them on some [[https://www.root-me.org/][toy websites]].
+- AI: he is now starting a project on opinion mining, that should involve Machine Learning, SVM…

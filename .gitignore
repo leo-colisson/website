@@ -1,0 +1,14 @@
+_cache
+src/_cache/
+src/_site/
+*#
+.direnv
+result
+*/.sass-cache
+src/css/.sass-cache
+src/site
+src/site.hi
+src/site.o
+hakyll
+svg_images/
+notes_for_myself.org

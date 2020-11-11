@@ -1,0 +1,154 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+// @mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+// nav {
+//     @extend .uk-background-muted;
+// }
+
+@mixin inversed-colored-text {
+    color: white;
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+
+p {
+    @extend .uk-text-justify;
+}
+
+.diagonal-box {
+    @include inversed-colored-text;
+
+    position: relative;
+    background-color: transparent;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 200px);
+        margin-bottom: -200px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 200px), 0% 100%);
+        background-color: #7ea880;
+        z-index:-1;
+    }
+
+    .idagonal-box__content {
+        position: relative;
+        z-index: 1;
+    }
+    h1,h2,h3,h4,h5,h6,em {
+        @include inversed-colored-text;
+    }
+}
+
+em {
+    @extend .uk-text-bolder;
+    color: #333;
+}
+
+
+.ad_navicon_toggle{
+    display: none;
+}
+
+/* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+    .ad_navtext_toggle {display: none;}
+    .ad_navicon_toggle {display: block;}
+
+}
+
+
+.hidden-up-to-s {
+    display: none;
+}
+@media (min-width: 640px) { /* @breakpoint-small */
+    .hidden-up-to-s {
+        display: block;
+    }
+}
+
+// ############################################################
+// #### Citations (see templates/reference.html)
+// ############################################################
+.citationTitle {
+    @extend .uk-text-bold;
+}
+
+.citationAuthors {
+    @extend .uk-text-italic;
+}
+
+// ############################################################
+// #### Monospaced-text
+// ############################################################
+
+@mixin monospace {
+    font-family: monospace;
+}
+
+.monospace {
+    @include monospace;
+}
+
+footer {
+    h1 {
+        @include monospace;
+        @extend .uk-h4;
+    }
+    p {
+        @extend .uk-text-left;
+    }
+}
+
+
+// ############################################################
+// #### Navbar
+// ############################################################
+
+#menu-mobile {
+    @extend .uk-padding;
+    .uk-nav {
+        li a {
+            color: #666;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        li.uk-active a {
+            color: #333;
+        }
+    }
+}
+
+// ############################################################
+// #### Footer
+// ############################################################
+// https://stackoverflow.com/a/20352949/4987648
+
+body {
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer{
+  margin-top:auto;
+}

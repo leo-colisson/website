@@ -1,0 +1,15 @@
+diff --git a/hakyll.cabal b/hakyll.cabal
+index 291f836..ea13d86 100644
+--- a/hakyll.cabal
++++ b/hakyll.cabal
+@@ -232,8 +232,8 @@ Library
+     Other-Modules:
+       Hakyll.Web.Pandoc.Binary
+     Build-Depends:
+-      pandoc          >= 2.10     && < 2.11,
+-      pandoc-citeproc >= 0.14     && < 0.18
++      pandoc          >= 2.10,
++      pandoc-citeproc >= 0.14
+     Cpp-options:
+       -DUSE_PANDOC
+ 

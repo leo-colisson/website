@@ -1,0 +1,36 @@
+* My personal website: [[https://leo.colisson.me][leo.colisson.me]]
+
+Here is the repository of my young website. It is based on Hakyll, a static website generator based on Haskell. This website is still a work in progress (a blog should come up soon), but you can already find an online version at [[https://leo.colisson.me][leo.colisson.me]].
+
+This website is in the public domain (CC0 license), so feel free to take any code that you like.
+
+** How to compile
+
+If you want to compile this website locally, the easiest option is maybe to install the amazing [[https://nixos.org/][Nix]] package manager:
+
+#+begin_src bash
+$ curl -L https://nixos.org/nix/install | sh
+#+end_src
+
+and clone this repository:
+
+#+begin_src bash
+$ git clone https://github.com/leo-colisson/website
+#+end_src
+
+Then, you can just go in the website, enter into a nix shell (this should install all the required dependencies automatically), and compile:
+
+#+begin_src bash
+$ cd website
+$ nix-shell
+$ cd src
+$ compile_and_watch
+#+end_src
+
+Then, just browse to this url [[http://localhost:8000][http://localhost:8000]].
+
+** Credits
+
+I try to take free of use pictures, or use photos of mine or friends. Here is the origin of (free to use) pictures I took online:
+- https://www.pexels.com/photo/silhouette-of-person-holding-glass-mason-jar-1274260/
+- https://www.pexels.com/photo/person-holding-a-green-plant-1072824/
