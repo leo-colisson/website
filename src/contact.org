@@ -1,0 +1,17 @@
+---
+title: Contact
+sectionContact: true
+---
+
+* Contact
+
+You can contact me at the following address: [[mailto:leo{dot}colisson{at}ens-paris-saclay.fr][leo {dot} colisson {at} ens-paris-saclay.fr]], or you can come to see me in my office (when the lockdown is finished of course 😄):
+
+#+begin_src
+Sorbonne Université - LIP6
+Boîte courrier 169
+Couloir 25-26, Étage 1, Bureau 103
+4 place Jussieu
+75252 PARIS CEDEX 05
+FRANCE
+#+end_src

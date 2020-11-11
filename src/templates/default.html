@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Léo Colisson - $title$</title>
+    <!-- Use that trick to avoid CSS caching
+         https://stackoverflow.com/questions/12992717/how-to-prevent-css-caching-on-a-web-page
+    -->
+    <link rel="stylesheet" href="/css/default.css?$cssHash$" />
+    <!-- See this to generate other styles:
+         https://stackoverflow.com/questions/62774695/pandoc-where-are-css-files-for-syntax-highlighting-code
+         https://learnbyexample.github.io/customizing-pandoc/
+    -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <!-- MathJax: display maths -->
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <header>
+
+      <div class="uk-container uk-container-expand uk-background-muted uk-padding-small uk-padding-remove-bottom uk-text-center">
+        <h1 class="uk-margin-small-bottom">Léo Colisson</h1>
+        <p class="uk-margin-remove uk-text-lead uk-text-small uk-text-center">PhD student in quantum cryptography</p>
+        <hr class="uk-divider-icon">
+      </div>
+      <!-- We could use something like:
+           data-uk-toggle="media: @s; cls: uk-flex-row uk-flex-top; mode: media"
+           but it's quite hard to read. Uikit sucks:
+           https://stackoverflow.com/questions/44898526/responsive-navbar-in-uikit-3
+           Hopefully, Hakyll allows us to avoid code duplication :-D
+      -->
+      <nav class="uk-visible uk-hidden@s uk-navbar-container uk-flex-column uk-flex-top uk-padding-small" data-uk-navbar>
+        <button href="#menu-mobile" class="uk-button uk-button-default" type="button" uk-toggle="target: #menu-mobile; animation: uk-animation-slide-top-small"><span data-uk-navbar-toggle-icon></span><span class="uk-margin-left">Menu</span></button>
+        <div id="menu-mobile" hidden>
+          <ul class="uk-nav">
+            $partial("templates/partials/menu.html")$
+          </ul>
+        </div>
+      </nav>
+      <div class="uk-visible@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+         <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+              $partial("templates/partials/menu.html")$
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      $if(includeContainerBool)$
+      <div class="uk-container">
+        <div class="uk-section">
+          $endif$
+          <!-- <h1>$title$</h1> -->
+          $body$
+          $if(includeContainerBool)$
+        </div>
+      </div>
+      $endif$
+    </main>
+
+    <footer class="uk-section uk-section-secondary">
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s monospace" uk-grid>
+          <div>
+            <h1>Contact</h1>
+            <p>
+              <span uk-icon="mail"></span> <a href="mailto:leo[dot]colisson[at]ens-paris-saclay.fr">leo [dot] colisson [at] ens-paris-saclay.fr</a><br/>
+              <span uk-icon="github"></span> <a href="https://github.com/leo-colisson">Github for science</a><br/>
+              <span uk-icon="github"></span> <a href="https://github.com/tobiasBora">Github for code</a><br/>
+            </p>
+          </div>
+          <div>
+            <h1>About this website</h1>
+            <p>
+              This website is built with <a href="https://jaspervdj.be/hakyll/">Hakyll</a>, a static website generator written in Haskell. It is still a work in progress, but I would be very grateful if you report me any mistake/typography.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<span class="citationTitle">$citationTitle$</span><br/>
+<span class="citationAuthors">$citationAuthors$</span><br/>
+$-if(citationPublishedAt)-$
+<span class="citationPublishedAt">$citationPublishedAt$</span>,
+$endif$
+$-if(citationPresentedAt)-$
+<span class="citationPresentedAt">$citationPresentedAt$</span>,
+$endif$
+$-if(citationArxiv)-$
+<span class="citationArxiv"><a href="https://arxiv.org/abs/$citationArxiv$">arXiv:$citationArxiv$</a>, </span>
+$-endif-$
+<span class="citationDate">$citationDate$</span>
+$-if(citationAutre)-$
+<span class="citationAutre">$citationAutre$</span>
+$-endif-$.
