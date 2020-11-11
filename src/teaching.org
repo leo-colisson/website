@@ -24,7 +24,7 @@ Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptol
 
 ** Tutoring
 
-I'm also tutoring a high-school student since 2017 to prepare him to some very important and competitive national exams in Israël (he is now, in 2020, starting his first year at the university). I teached him notably:
+I'm also tutoring a high-school student since 2017 to prepare him to some very important and competitive national exams in Israel (he is now, in 2020, starting his first year at the university). I taught him notably:
 - High-level programming (Python, C, Javascript, PHP, SQL, Ocaml, Assembly), including the following paradigms:
   - Functional Programming
   - Object-Oriented Programming
