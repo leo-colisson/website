@@ -38,6 +38,10 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
+    match "posters/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- All html files at the root folder should be kept intact
     match "*.html" $ do
       route idRoute
