@@ -83,6 +83,15 @@ em {
 }
 
 // ############################################################
+// #### Anchor links hidden by the sticky banner
+// ############################################################
+// https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+// ############################################################
 // #### Citations (see templates/reference.html)
 // ############################################################
 .citationTitle {
