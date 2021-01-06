@@ -86,6 +86,7 @@ em {
 // #### Anchor links hidden by the sticky banner
 // ############################################################
 // https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+// https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
 
 html {
   scroll-padding-top: 100px; /* height of sticky header */
@@ -124,6 +125,17 @@ footer {
     }
 }
 
+// ############################################################
+// #### Main
+// ############################################################
+
+main {
+    ul {
+        // By default there is a quite big margin above/below lists in posters
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+}
 
 // ############################################################
 // #### Navbar
