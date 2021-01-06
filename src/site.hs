@@ -47,6 +47,11 @@ main = do
         >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
         >>= relativizeUrls
 
+    -- All pdf files at the root folder should be kept intact
+    match "*.pdf" $ do
+      route idRoute
+      compile copyFileCompiler
+
     -- Copy and compress the CSS
     match "css/*.css" $ do
         route   idRoute
