@@ -107,12 +107,25 @@ includeContainer: false
   </div>
   <div class="uk-section">
     <h1 id="publications">Publications and Preprints</h1>
+    <p>Papers are listed in reverse order, based on their first online appearance. See also my
+      <a href="https://scholar.google.com/citations?user=w2ZPqAcAAAAJ&hl=fr"><span class="uk-icon">
+        <!-- Must include the source code inline, not really any other option possible: https://stackoverflow.com/questions/28213417/how-to-set-a-external-svg-color-in-html-using-css
+             Maybe I should also compile them directly in uikit https://getuikit.com/docs/custom-icons
+        -->
+        $partial("templates/partials/scholar.svg")$
+        Google Scholar profile</span></a>.</p>
     <ul>
+      <li>$partialWithContext("templates/reference.html",
+        "citationTitle", "Non-Destructive Zero-Knowledge Proofs on Quantum States, and Multi-Party Generation of Authorized Hidden GHZ States",
+        "citationAuthors", "L. Colisson, F. Grosshans, E. Kashefi",
+        "citationDate", "April 2021",
+        "citationPublishedAt", "Manuscript",
+        "citationArxiv", "2104.04742")$</li>
       <li>$partialWithContext("templates/reference.html",
         "citationTitle", "Security Limitations of Classical-Client Delegated Quantum Computing",
         "citationAuthors", "C. Badertscher, A. Cojocaru, L. Colisson, E. Kashefi, D. Leichtle, A. Mantri, P. Wallden",
         "citationDate", "July 2020",
-        "citationPublishedAt", "ASIACRYPT 2020 (<a href=\"https://www.youtube.com/watch?v=ROqk9tZ_VxA\">Video</a>, <a href=\"https://www.youtube.com/watch?t=1799&v=DXTmD-hJ3to&feature=youtu.be\">Short live session</a>)",
+        "citationPublishedAt", "<a href=\"https://link.springer.com/chapter/10.1007/978-3-030-64834-3_23\">ASIACRYPT 2020</a> (<a href=\"https://www.youtube.com/watch?v=ROqk9tZ_VxA\">Video</a>, <a href=\"https://www.youtube.com/watch?t=1799&v=DXTmD-hJ3to&feature=youtu.be\">Short live session</a>)",
         "citationPresentedAt", "Presented at Q-turn 2020",
         "citationArxiv", "2007.01668")$</li>
       <li>$partialWithContext("templates/reference.html",
@@ -125,11 +138,19 @@ includeContainer: false
         "citationTitle", "On the possibility of classical client blind quantum computing",
         "citationAuthors", "A. Cojocaru, L. Colisson, E. Kashefi, P. Wallden",
         "citationDate", "February 2018",
-        "citationPublishedAt", "Manuscript",
+        "citationPublishedAt", "<a href=\"https://www.mdpi.com/2410-387X/5/1/3\">Cryptography 2021</a> (Selected for the <a href=\"https://www.mdpi.com/2410-387X/5/1\">Journal Issue Cover</a>)",
         "citationArxiv", "1802.08759",
         "citationPresentedAt", "Presented at QCrypt2018 (<a href=\"https://www.youtube.com/watch?v=u8gUPcLyuPo\">Video</a>, <a href=\"https://github.com/leo-colisson/qcrypt_2018_slides/blob/master/diapo_qcrypt.pdf\">Slides</a>)")$</li>
     </ul>
-    <h1 id="publications">Talks</h1>
+    <h1>Invited Talks</h1>
+    <ul>
+      <li>$partialWithContext("templates/reference.html",
+        "citationTitle", "Tutorial: Basics of quantum information (3h)",
+        "citationPublishedAt", "Spring School <a href=\"https://conferences.cirm-math.fr/2341.html\">EPIT 2021</a>",
+        "citationDate", "24-28 May, 2021")$
+      </li>
+    </ul>
+    <h1>Talks</h1>
     <ul>
       <li>$partialWithContext("templates/reference.html",
         "citationTitle", "Security Limitations of Classical-Client Delegated Quantum Computing",
