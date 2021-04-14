@@ -76,6 +76,13 @@
             <h1>Contact</h1>
             <p>
               <span uk-icon="mail"></span> <a href="mailto:leo[dot]colisson[at]ens-paris-saclay.fr">leo [dot] colisson [at] ens-paris-saclay.fr</a><br/>
+              <span class="uk-icon">
+                <!-- Must include the source code inline, not really any other option possible: https://stackoverflow.com/questions/28213417/how-to-set-a-external-svg-color-in-html-using-css
+                     Maybe I should also compile them directly in uikit https://getuikit.com/docs/custom-icons
+                -->
+                $partial("templates/partials/scholar.svg")$
+              </span>
+              <a href="https://scholar.google.com/citations?user=w2ZPqAcAAAAJ">Google Scholar</a><br/>
               <span uk-icon="github"></span> <a href="https://github.com/leo-colisson">Github for science</a><br/>
               <span uk-icon="github"></span> <a href="https://github.com/tobiasBora">Github for code</a><br/>
               <span uk-icon="linkedin"></span> <a href="https://www.linkedin.com/in/leo-colisson">LinkedIn</a>
