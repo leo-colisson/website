@@ -5,7 +5,11 @@ sectionTeaching: true
 
 * Teaching
 
-Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology and Discrete Mathematics.
+Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology, Discrete Mathematics and C.
+
+** 2020-2021
+
+- Second semester: **C Programming (L1)**. Teaching assistant in the course "Programmation C" (Licence 1, Sorbonne Université), organized by [[https://www.lip6.fr/actualite/personnes-fiche.php?ident=P173][Isabelle Mounier]].
 
 ** 2019-2020
 
@@ -33,6 +37,6 @@ I'm also tutoring a high-school student since 2017 to prepare him to some very i
   - a compiler, compiling a C-- language into 64 bit assembly. He started from the template given in [[http://www.lsv.fr/~goubault/CoursProgrammation/MiniC1/minic.html][this course]], that provides a parser, and his goal was to produce the 64 bit assembly code from the AST (Abstract syntax tree).
   - a mini-OS: he learnt how to code an OS from scratch, that could boot in real mode (16 bits). We saw how to use interruptions to draw on the screen, how to create custom interruptions/traps, and how to use =in= / =out= assembly commands to control the hardware.
   - he also learnt how a computer is built, starting from the laws of physics, continuing with the transistors, building fundamental circuits from them, and implementing (with pen and papers) a simple Von Neumann machine.
-- Network: he learnt how famous protocols works (TCP, UDP), and how they are related with the OSI model.
+- Network: he learnt how famous protocols work (TCP, UDP), and how they are related to the OSI model.
 - Security: he learnt most famous attack vectors and tried to practice them on some [[https://www.root-me.org/][toy websites]].
 - AI: he is now starting a project on opinion mining, that should involve Machine Learning, SVM…
