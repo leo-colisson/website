@@ -13,6 +13,8 @@
   cabal-install,
   ghcid,
   writeShellScriptBin,
+  runCommand,
+  stdenv,
 }:
 let
   # This is the compiled site.hs. However, in order to include CSS libraries
@@ -42,9 +44,24 @@ let
   '';
   # This is the final static, compiled, website
   # colissonStaticWebsite = runCommand "colissonStaticWebsite" ''
-    # ${colissonExecutableWithThirdParties}/bin/site 
+  #   cd src && ${colissonExecutableWithThirdParties}/bin/site build && mkdir -p $out && cp -r _site $out
   # '';
-  
+  colissonStaticWebsite = stdenv.mkDerivation {
+    name = "colissonStaticWebsite";
+    src = ./src;
+    nativeBuildInputs = [ colissonExecutableWithThirdParties ];
+    installPhase = ''
+      mkdir -p $out
+      echo "Cleaning..."
+      ${colissonExecutableWithThirdParties}/bin/site clean
+      echo "Building..."
+      ls -al
+      ls templates
+      ${colissonExecutableWithThirdParties}/bin/site build
+      cp -r _site $out
+    '';
+  };
+
   # This shell provides some useful commands to develop:
   shell = mkShell {
     name = "website-dev";
@@ -66,5 +83,5 @@ let
   };
 in
 {
-  inherit colissonExecutable colissonExecutableWithThirdParties shell;
+  inherit colissonExecutable colissonExecutableWithThirdParties colissonStaticWebsite shell;
 }

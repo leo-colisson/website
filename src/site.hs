@@ -50,10 +50,10 @@ main = do
     match "*.html" $ do
       route idRoute
       compile $ do
-      getResourceBody
-        >>= applyAsTemplate customDefaultContext
-        >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
-        >>= relativizeUrls
+        getResourceBody
+          >>= applyAsTemplate customDefaultContext
+          >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
+          >>= relativizeUrls
 
     -- All pdf files at the root folder should be kept intact
     match "*.pdf" $ do
