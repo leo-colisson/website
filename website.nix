@@ -15,6 +15,7 @@
   writeShellScriptBin,
   runCommand,
   stdenv,
+  glibcLocales,
 }:
 let
   # This is the compiled site.hs. However, in order to include CSS libraries
@@ -49,16 +50,34 @@ let
   colissonStaticWebsite = stdenv.mkDerivation {
     name = "colissonStaticWebsite";
     src = ./src;
-    nativeBuildInputs = [ colissonExecutableWithThirdParties ];
+    nativeBuildInputs = [
+      # colissonExecutableWithThirdParties
+      (haskellPackages.ghcWithPackages (p: [p.hakyll p.ghcid]))
+      sass
+      sass
+      entr
+      hlint
+      cabal-install
+      ghcid
+      compileAndWatch
+      deployCurrentVersion
+      glibcLocales
+    ];
+    # LC_ALL must be configured to UTF-8 for sass to work
+    # https://github.com/csswizardry/inuit.css/issues/270
+    # and this is required to be able to change the locale
+    # https://stackoverflow.com/questions/62287269/nix-shell-cannot-change-locale-warning
+    LOCALE_ARCHIVE_2_27 = "${glibcLocales}/lib/locale/locale-archive";
     installPhase = ''
-      mkdir -p $out
+      # To avoid error about invalid US-ASCII char
+      # https://github.com/csswizardry/inuit.css/issues/270
+      export LC_ALL="en_US.UTF-8"
+      export LANG="en_US.UTF-8"
       echo "Cleaning..."
       ${colissonExecutableWithThirdParties}/bin/site clean
       echo "Building..."
-      ls -al
-      ls templates
       ${colissonExecutableWithThirdParties}/bin/site build
-      cp -r _site $out
+      cp -r _site $out ## WARNING: do not "mkdir $out" or the website will be in $out/_site instead of $out.
     '';
   };
 
