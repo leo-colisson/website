@@ -34,7 +34,7 @@
           # For example "nix build .#mysatsolver"
           packages = flake-utils.lib.flattenTree { inherit colissonWebsite; };
           # What package "nix build ." will compile by default:
-          defaultPackage = colissonWebsite.colissonExecutableWithThirdParties;
+          defaultPackage = colissonWebsite.colissonStaticWebsite;
           # The apps can be run directly via "nix run .#name-of-the-app"
           # Example: "nix run .#mysatsolver"
           apps.colissonExecutable = flake-utils.lib.mkApp {
