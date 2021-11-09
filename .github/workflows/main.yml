@@ -33,6 +33,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          lfs: true
+      # Some big files are added using lfs (make sure to run "git lfs install" to configure the hooks properly)
+      # Then you can "git lfs track yourfile" (maybe do it only from the root to have ".gitattribute" in the
+      # root folder. But guess it's not mandatory.)
+      # then "git add yourfile"/"git push" as usual.
+      # If git lfs is installed, I think lfs are automatically pulled. Otherwise, install it and run
+      # "git lfs pull" (git lfs checkout does not download the files, see git lfs fetch for that).
+      - name: Checkout LFS objects
+        run: git lfs checkout
       - uses: cachix/install-nix-action@v14
         with:
           nix_path: nixpkgs=channel:nixos-unstable
