@@ -41,6 +41,7 @@ jobs:
       # then "git add yourfile"/"git push" as usual.
       # If git lfs is installed, I think lfs are automatically pulled. Otherwise, install it and run
       # "git lfs pull" (git lfs checkout does not download the files, see git lfs fetch for that).
+      # To list files, use "git lfs ls-files".
       - name: Checkout LFS objects
         run: git lfs checkout
       - uses: cachix/install-nix-action@v14
