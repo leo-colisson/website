@@ -1,4 +1,11 @@
-# This is a basic workflow to help you get started with Actions
+# This files is used by "github actions" to push (every time a commit is made on "main")
+# the website on the "gh-pages" branch which will host the website.
+# To enable it, make sure to configure it in the project: "Settings > Pages".
+# The website is served by default at https://leo-colisson.github.io/website/
+# but we can configure a custom domain (just add "CNAME leo-colisson.github.io.").
+# It is even possible to configure https!
+# TODO: enable caching.
+
 # Some documentations: https://docs.github.com/en/actions/learn-github-actions/environment-variables
 # https://alexwilson.tech/content/717e6a35-1cb5-4a28-9321-592d05ddd9dc
 # https://medium.com/@danieljimgarcia/publishing-static-sites-to-github-pages-using-github-actions-8040f57dfeaf
@@ -19,17 +26,13 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    # The type of runner that the job will run on (warning: this is not a docker image)
     runs-on: ubuntu-18.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
       - uses: cachix/install-nix-action@v14
         with:
           nix_path: nixpkgs=channel:nixos-unstable
@@ -37,11 +40,11 @@ jobs:
             experimental-features = nix-command flakes
 
       # Runs a set of commands using the runners shell
-      - name: Echo flake installed
-        run: |
-          echo ==========================
-          echo === Flake is installed ===
-          echo ==========================
+      # - name: Echo flake installed
+      #   run: |
+      #     echo ==========================
+      #     echo === Flake is installed ===
+      #     echo ==========================
 
       # Build the project (the website will be in the "result" folder)
       - run: nix build
