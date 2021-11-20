@@ -4,7 +4,7 @@
 # The website is served by default at https://leo-colisson.github.io/website/
 # but we can configure a custom domain (just add "CNAME leo-colisson.github.io.").
 # It is even possible to configure https!
-# TODO: enable caching.
+# TODO: enable caching. See e.g. https://github.com/actions/cache.
 
 # Some documentations: https://docs.github.com/en/actions/learn-github-actions/environment-variables
 # https://alexwilson.tech/content/717e6a35-1cb5-4a28-9321-592d05ddd9dc
@@ -63,7 +63,7 @@ jobs:
       # Copy it in the "gh-pages" page.
       # https://github.com/marketplace/actions/deploy-to-github-pages
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@4.1.6
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: result # The folder the action should deploy.
