@@ -42,6 +42,10 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
+    match "articles/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "posters/**" $ do
         route   idRoute
         compile copyFileCompiler
