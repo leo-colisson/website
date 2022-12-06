@@ -7,6 +7,11 @@ sectionTeaching: true
 
 Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology, Discrete Mathematics and C.
 
+** 2022-2023
+
+- First semester: **Initiation to Modern Cryptography (L3)**. Teaching assistant in the course "Initiation to Modern Cryptography" (Licence 3, Universiteit van Amsterdam), organized by [[https://staff.fnwi.uva.nl/c.schaffner/][Christian Schaffner]].
+
+
 ** 2020-2021
 
 - Second semester: **C Programming (L1)**. Teaching assistant in the course "Programmation C" (Licence 1, Sorbonne Université), organized by [[https://www.lip6.fr/actualite/personnes-fiche.php?ident=P173][Isabelle Mounier]].

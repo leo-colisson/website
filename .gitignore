@@ -12,3 +12,6 @@ src/site.o
 hakyll
 svg_images/
 notes_for_myself.org
+*.~undo-tree~
+.envrc
+.sass-cache
