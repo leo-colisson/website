@@ -7,16 +7,21 @@ sectionTeaching: true
 
 Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology, Discrete Mathematics and C.
 
-** 2022-2023
+** 2023−2024
 
 - First semester: **Initiation to Modern Cryptography (L3)**. Teaching assistant in the course "Initiation to Modern Cryptography" (Licence 3, Universiteit van Amsterdam), organized by [[https://staff.fnwi.uva.nl/c.schaffner/][Christian Schaffner]].
 
+  
+** 2022−2023
 
-** 2020-2021
+- Firs semester: **Initiation to Modern Cryptography (L3)**. Teaching assistant in the course "Initiation to Modern Cryptography" (Licence 3, Universiteit van Amsterdam), organized by [[https://staff.fnwi.uva.nl/c.schaffner/][Christian Schaffner]].
+
+
+** 2020−2021
 
 - Second semester: **C Programming (L1)**. Teaching assistant in the course "Programmation C" (Licence 1, Sorbonne Université), organized by [[https://www.lip6.fr/actualite/personnes-fiche.php?ident=P173][Isabelle Mounier]].
 
-** 2019-2020
+** 2019−2020
 
 - Second semester: **Cryptology (L2)**. Teaching assistant in the course "Introduction à la cryptologie" (Licence 3, Sorbonne Université), organized by [[https://www-pequan.lip6.fr/~vmm/en/coordonnees.php][Valérie Ménissier-Morain]] and [[https://www-polsys.lip6.fr/~berthomieu/][Jeremy Berthomieu]].
   - Most of my teaching materials are available on [[https://moodle-sciences.upmc.fr/moodle-2019/][moodle]] (videos, saved blackboard, QCM...).
@@ -26,7 +31,7 @@ Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptol
   - [[https://git.colisson.me/leo/methodologie_preuve][Here]] is a general method where I explain how you can write formally a proof without even thinking (almost…).
   - The official page of the course is available [[https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2019/ue/LU2IN005-2019oct/][here]].
 
-** 2018-2019
+** 2018−2019
 
 - Second semester: **Cryptology (L2)**. Teaching assistant in the course "Introduction à la cryptologie" (Licence 3, Sorbonne Université), organized by [[https://www-pequan.lip6.fr/~vmm/en/coordonnees.php][Valérie Ménissier-Morain]] and [[https://www-polsys.lip6.fr/~berthomieu/][Jeremy Berthomieu]].
 - First semester: **Python (L2)**. Teaching assistant in the course (Licence 2 "[[https://www.polytech.sorbonne-universite.fr/formations/agroalimentaire][AGRAL]]", Polytech), organized by [[http://xavier.tannier.free.fr/][Xavier Tannier]].
