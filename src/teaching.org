@@ -7,6 +7,10 @@ sectionTeaching: true
 
 Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptology, Discrete Mathematics and C.
 
+** 2024-2025
+
+- First semester: **Cryptography Engineering (M2)**. See the [[./teaching/2024_2025_-_Crypto_eng/][page of the course]].
+
 ** 2023−2024
 
 - First semester: **Initiation to Modern Cryptography (L3)**. Teaching assistant in the course "Initiation to Modern Cryptography" (Licence 3, Universiteit van Amsterdam), organized by [[https://staff.fnwi.uva.nl/c.schaffner/][Christian Schaffner]].

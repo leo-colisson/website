@@ -50,6 +50,14 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
+    match "teaching/**/*.pdf" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "teaching/**/*.mp4" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     -- All html files at the root folder should be kept intact
     match "*.html" $ do
       route idRoute
@@ -77,6 +85,12 @@ main = do
             return . fmap compressCss
 
     -- All markdown/org-mode files are converted using pandoc
+    match (fromGlob "**/*.org" .||. fromGlob "**/*.md") $ do
+        route   $ setExtension "html"
+        compile $ pandocMathCompiler
+            >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
+            >>= relativizeUrls
+
     match (fromGlob "*.org" .||. fromGlob "*.md") $ do
         route   $ setExtension "html"
         compile $ pandocMathCompiler
