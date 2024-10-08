@@ -84,14 +84,7 @@ main = do
             sassCompiler >>=
             return . fmap compressCss
 
-    -- All markdown/org-mode files are converted using pandoc
-    match (fromGlob "**/*.org" .||. fromGlob "**/*.md") $ do
-        route   $ setExtension "html"
-        compile $ pandocMathCompiler
-            >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
-            >>= relativizeUrls
-
-    match (fromGlob "*.org" .||. fromGlob "*.md") $ do
+    match (fromGlob "**.org" .||. fromGlob "**.md") $ do
         route   $ setExtension "html"
         compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/default.html" customDefaultContext
