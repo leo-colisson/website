@@ -5,7 +5,7 @@ sectionContact: true
 
 * Contact
 
-You can contact me at the following address: [[mailto:leo dot colisson-palais at universite-grenoble-alpes (another dot) fr][leo dot colisson-palais at universite-grenoble-alpes (another dot) fr]], or you can come to see me in my office:
+You can contact me at the following address: [[mailto:leo dot colisson-palais at univ-grenoble-alpes (another dot) fr][leo dot colisson-palais at univ-grenoble-alpes (another dot) fr]], or you can come to see me in my office:
 
 #+begin_src
 Batiment IMAG, bureau 103
