@@ -9,3 +9,8 @@
 
 - TD 1: [[./advanced_crypto_td_01.pdf][Zero-knowledge proofs]]
 - TD 2: [[./advanced_crypto_td_02.pdf][Multi-Party Computing]]
+
+** TP
+
+- TP: [[./advanced_crypto_tp_01.pdf][Zero-knowledge proofs and game of life]] ([[./tp/tp_01.py][template]], [[./tp_01_tests.py][tests]])
+  
