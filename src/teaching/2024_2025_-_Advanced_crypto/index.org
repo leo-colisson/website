@@ -4,11 +4,13 @@
 
 - CM 1: [[./advanced_crypto_zk_01.pdf][Zero-knowledge proofs]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Advanced_crypto/advanced_crypto_zk_01-metadata.mp4][the (few) animations]], use Chrome)
 - CM 2: [[./advanced_crypto_mpc_02.pdf][Multi-Party Computing]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Advanced_crypto/advanced_crypto_mpc_02-metadata.mp4][the (few) animations]], use Chrome)
+- CM 2: [[./advanced_crypto_lattice_03.pdf][Lattice-based cryptography and cryptanalysis]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Advanced_crypto/advanced_crypto_lattice_03-metadata.mp4][the (few) animations]], use Chrome)
 
 ** TD
 
 - TD 1: [[./advanced_crypto_td_01.pdf][Zero-knowledge proofs]]
 - TD 2: [[./advanced_crypto_td_02.pdf][Multi-Party Computing]]
+- TD 3: [[./advanced_crypto_td_03.pdf][Basis lattices and LLL-based cryptanalysis]]
 
 ** TP
 

@@ -54,6 +54,10 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
+    match "teaching/**/*.py" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "teaching/**/*.mp4" $ do
         route   idRoute
         compile copyFileCompiler
