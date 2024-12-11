@@ -125,12 +125,18 @@ def verify(g, commitments, b, openings, options=Options()):
     return (False, "TODO, give here the reason of a potential failure")
 
 def get_bit(bytes_str, i):
-    """Function provided: Returns the i-th bit of the byte string bytes_str"""
+    """Function provided (don't modify it!): Returns the i-th bit of the byte string bytes_str"""
     return 0 if (bytes_str[i // 8] & (128 >> (i % 8))) == 0 else 1
+
+def fiat_shamir_randomness(options, commitments, message):
+    """Returns a list of integers 0/1, as used in the fiat-shamir transform."""
+    print("TODO")
+    return [0, 1, 1]
 
 def fiat_shamir_proof(g, path, message=b'', options=Options()):
     """Fiat-shamir transform, extended to also allow signature.
     The output is the concatenation of the commitments followed by the concatenation of all openings."""
+    print("TODO")
     return b''
 
 def verify_fiat_shamir_proof(g, proof, message=b'', options=Options()):
