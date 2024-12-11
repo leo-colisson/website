@@ -58,6 +58,10 @@ main = do
         route   idRoute
         compile copyFileCompiler
 
+    match "teaching/**/*.proof" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "teaching/**/*.mp4" $ do
         route   idRoute
         compile copyFileCompiler
