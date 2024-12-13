@@ -9,5 +9,6 @@
 ** TD
 - TD 1: [[./crypto_eng_td_01.pdf][Proof methods and OT/PRF/PRG]]
 - TD 2: [[./crypto_eng_td_02.pdf][IND-CPA security]]
+- TD 3: [[./crypto_eng_td_02.pdf][Hash functions]]
 
 
