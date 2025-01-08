@@ -11,6 +11,7 @@
 - TD 1: [[./advanced_crypto_td_01.pdf][Zero-knowledge proofs]]
 - TD 2: [[./advanced_crypto_td_02.pdf][Multi-Party Computing]]
 - TD 3: [[./advanced_crypto_td_03.pdf][Basis lattices and LLL-based cryptanalysis]]
+- TD 3: [[./advanced_crypto_td_04.pdf][LWE encryption and reductions]] ([[./advanced_crypto_td_04_correction.pdf][partial correction]])
 
 ** TP
 
