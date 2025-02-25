@@ -11,4 +11,7 @@
 - TD 2: [[./crypto_eng_td_02.pdf][IND-CPA security]]
 - TD 3: [[./crypto_eng_td_02.pdf][Hash functions]]
 
+** Exam
+
+Here is the [[./exam_2024-2025.pdf][2024-2025 exam]], with [[./exam_2024-2025-correction.pdf][the correction]].
 
