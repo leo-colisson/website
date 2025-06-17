@@ -1,11 +1,17 @@
-* Cryptography Engineering (M2)
+* Cryptographie CSI (M2)
 
 ** CM
 
-- CM 1: [[./crypto_csi_cm_01.pdf][Security definitions and proof methods]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_01-metadata.mp4][the (few) animations]], use Chrome, often buggy in Windows)
-- CM 2: [[./crypto_csi_cm_02.pdf][Symmetric cryptography]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_02-metadata.mp4][the (few) animations]], use Chrome)
+- CM 1: [[./crypto_csi_cm_01.pdf][Définitions de sécurité et méthodes de preuves]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_01-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
+- CM 2: [[./crypto_csi_cm_02.pdf][Cryptographie symmetrique]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_02-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
+- CM 2: [[./crypto_csi_cm_03.pdf][Fonctions de hash]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_03-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
 
 ** TD
-- TD 1: [[./crypto_csi_td_01.pdf][Proof methods and OT/PRF/PRG]]
-- TD 2: [[./crypto_csi_td_02.pdf][IND-CPA security]]
 
+- TD 1: [[./crypto_csi_td_01.pdf][Méthodes de preuve et OT/PRF/PRG]]
+- TD 2: [[./crypto_csi_td_02.pdf][Sécurité IND-CPA]]
+- TD 2: [[./crypto_csi_td_03.pdf][Fonctions de hash]]
+
+** TP
+
+Cf quiz et TP dans [[https://moodle.caseine.org/course/view.php?id=1317][caseine]].
