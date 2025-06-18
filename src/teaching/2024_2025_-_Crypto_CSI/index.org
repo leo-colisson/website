@@ -14,4 +14,4 @@
 
 ** TP
 
-Cf quiz et TP dans [[https://moodle.caseine.org/course/view.php?id=1317][caseine]].
+Cf quiz et TP dans [[https://moodle.caseine.org/course/view.php?id=1317][caseine]], et [[./TP_padding_oracle/crypto_csi_tp_padding_oracle_attack.pdf][le sujet]]. 
