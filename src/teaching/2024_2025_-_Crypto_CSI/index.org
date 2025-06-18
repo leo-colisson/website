@@ -4,14 +4,22 @@
 
 - CM 1: [[./crypto_csi_cm_01.pdf][Définitions de sécurité et méthodes de preuves]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_01-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
 - CM 2: [[./crypto_csi_cm_02.pdf][Cryptographie symmetrique]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_02-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
-- CM 2: [[./crypto_csi_cm_03.pdf][Fonctions de hash]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_03-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
+- CM 3: [[./crypto_csi_cm_03.pdf][Fonctions de hash]] (avec [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_CSI/crypto_csi_cm_03-metadata.mp4][les (quelques) animations]], utiliser Chrome, souvent buggé dans Windows)
+- CM 4: [[./crypto_csi_cm_04.pdf][MAC]]
+- CM 5: [[./crypto_csi_cm_05.pdf][RSA]]
 
 ** TD
 
 - TD 1: [[./crypto_csi_td_01.pdf][Méthodes de preuve et OT/PRF/PRG]]
 - TD 2: [[./crypto_csi_td_02.pdf][Sécurité IND-CPA]]
-- TD 2: [[./crypto_csi_td_03.pdf][Fonctions de hash]]
+- TD 3: [[./crypto_csi_td_03.pdf][Fonctions de hash]]
+
++ Nombreux exercices dans les slides directement.
 
 ** TP
 
 Cf quiz et TP dans [[https://moodle.caseine.org/course/view.php?id=1317][caseine]], et [[./TP_padding_oracle/crypto_csi_tp_padding_oracle_attack.pdf][le sujet]]. 
+
+# Local Variables:
+# jinx-languages: "fr"
+# End:
