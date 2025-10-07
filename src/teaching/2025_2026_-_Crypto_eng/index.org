@@ -1,0 +1,9 @@
+* Cryptography Engineering (M2)
+
+** CM
+
+- CM 1: [[./crypto_eng_cm_01.pdf][Security definitions and proof methods]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2025_2026_-_Crypto_eng/crypto_eng_cm_01-metadata.mp4][the (few) animations]], use Chrome)
+
+** TD
+- TD 1: [[./crypto_eng_td_01.pdf][Proof methods and OT/PRF/PRG]]
+
