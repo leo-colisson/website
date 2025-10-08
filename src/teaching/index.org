@@ -9,13 +9,13 @@ Since the beginning of my PhD, I've been a teaching assistant in Python, Cryptol
 
 ** 2025-2026
 
-- First semester: **Cryptography Engineering (M2)**. See the [[./teaching/2025_2026_-_Crypto_eng/][page of the course]].
+- First semester: **Cryptography Engineering (M2)**. See the [[./2025_2026_-_Crypto_eng/][page of the course]].
 
 ** 2024-2025
 
-- First semester: **Cryptography Engineering (M2)**. See the [[./teaching/2024_2025_-_Crypto_eng/][page of the course]].
-- First semester: **Advanced cryptography (M2)**. See the [[./teaching/2024_2025_-_Advanced_crypto/][page of the course]].
-- Second semester: **Cryptography CSI (M2)**. See the [[./teaching/2024_2025_-_Crypto_CSI/][page of the course]].
+- First semester: **Cryptography Engineering (M2)**. See the [[./2024_2025_-_Crypto_eng/][page of the course]].
+- First semester: **Advanced cryptography (M2)**. See the [[./2024_2025_-_Advanced_crypto/][page of the course]].
+- Second semester: **Cryptography CSI (M2)**. See the [[./2024_2025_-_Crypto_CSI/][page of the course]].
 
 ** 2023−2024
 
