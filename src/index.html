@@ -112,19 +112,25 @@ includeContainer: false
       </p>
     </div>
     <h1 id="publications">Publications and Preprints</h1>
-    <p>Papers are listed in reverse choronological order, based on their first online appearance. See also my
+    <p>Papers are listed in reverse choronological order, based on their first online appearance. See also my <a href="https://dblp.org/pid/215/5080.html">dblp</a> and
       <a href="https://scholar.google.com/citations?user=w2ZPqAcAAAAJ&hl=fr"><span class="uk-icon">
         <!-- Must include the source code inline, not really any other option possible: https://stackoverflow.com/questions/28213417/how-to-set-a-external-svg-color-in-html-using-css
              Maybe I should also compile them directly in uikit https://getuikit.com/docs/custom-icons
         -->
         $partial("templates/partials/scholar.svg")$
-        Google Scholar profile</span></a>.</p>
+        Google Scholar</span></a> profiles (warning: it seems like since my name changed, Google Scholar stopped indexing my articles).</p>
     <ul>
+      <li>$partialWithContext("templates/reference.html",
+        "citationTitle", "A Quantum Cloning Game with Applications to Quantum Position Verificational",
+        "citationAuthors", "L. Escolà-Farràs, L. Colisson Palais, F. Speelman",
+        "citationDate", "September 2025",
+        "citationPublishedAt", "<a href=\"https://doi.org/10.4230/LIPIcs.TQC.2025.2\">TQC 2025</a>",
+        "citationArxiv", "2410.22157")$</li>
       <li>$partialWithContext("templates/reference.html",
         "citationTitle", "All graph state verification protocols are composably secure",
         "citationAuthors", "L. Colisson, D. Markham, R. Yehia",
         "citationDate", "February 2024",
-        "citationPublishedAt", "Manuscript, talk at QPL 2024",
+        "citationPublishedAt", "Manuscript, talk at <a href=\"https://qcrypt.net/2024/accepted-papers/\">QCRYPT 2024</a> and <a href=\"https://qpl2024.dc.uba.ar/accepted.html\">QPL 2024</a>",
         "citationArxiv", "2402.01445")$</li>
       <li>$partialWithContext("templates/reference.html",
         "citationTitle", "Oblivious Transfer from Zero-Knowledge Proofs, or How to Achieve Round-Optimal Quantum Oblivious Transfer and Zero-Knowledge Proofs on Quantum States",
