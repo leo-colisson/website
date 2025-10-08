@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Léo Colisson Palais - index</title>
+    <!-- Use that trick to avoid CSS caching
+         https://stackoverflow.com/questions/12992717/how-to-prevent-css-caching-on-a-web-page
+    -->
+    <link rel="stylesheet" href="../../css/default.css?34f064252837a7c068c7b354aff0d264a064629fc761eee34b6e595ef0a4baac7fc0d2a45200e87e526c7bb7e5706b9806c74ae65236e16e5d61aec44f7077b6" />
+    <!-- See this to generate other styles:
+         https://stackoverflow.com/questions/62774695/pandoc-where-are-css-files-for-syntax-highlighting-code
+         https://learnbyexample.github.io/customizing-pandoc/
+    -->
+    <link rel="stylesheet" href="../../css/syntax.css" />
+    <!-- MathJax: display maths -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <header>
+
+      <div class="uk-container uk-container-expand uk-background-muted uk-padding-small uk-padding-remove-bottom uk-text-center">
+        <h1 class="uk-margin-small-bottom">Léo Colisson Palais</h1>
+        <p class="uk-margin-remove uk-text-lead uk-text-small uk-text-center">Researcher in quantum cryptography</p>
+        <hr class="uk-divider-icon">
+      </div>
+      <!-- We could use something like:
+           data-uk-toggle="media: @s; cls: uk-flex-row uk-flex-top; mode: media"
+           but it's quite hard to read. Uikit sucks:
+           https://stackoverflow.com/questions/44898526/responsive-navbar-in-uikit-3
+           Hopefully, Hakyll allows us to avoid code duplication :-D
+      -->
+      <nav class="uk-visible uk-hidden@s uk-navbar-container uk-flex-column uk-flex-top uk-padding-small" data-uk-navbar>
+        <button href="#menu-mobile" class="uk-button uk-button-default" type="button" uk-toggle="target: #menu-mobile; animation: uk-animation-slide-top-small"><span data-uk-navbar-toggle-icon></span><span class="uk-margin-left">Menu</span></button>
+        <div id="menu-mobile" hidden>
+          <ul class="uk-nav">
+            <li class><a href="../../">About</a></li>
+<li><a href="../../CV_Leo_Colisson.pdf">CV</a></li>
+<li class><a href="../../#publications">Publications</a></li>
+<li class><a href="../../teaching/">Teaching</a></li>
+<li class><a href="../../blog.html">Blog</a></li>
+<li class><a href="../../contact.html">Contact</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="uk-visible@s" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+         <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+              <li class><a href="../../">About</a></li>
+<li><a href="../../CV_Leo_Colisson.pdf">CV</a></li>
+<li class><a href="../../#publications">Publications</a></li>
+<li class><a href="../../teaching/">Teaching</a></li>
+<li class><a href="../../blog.html">Blog</a></li>
+<li class><a href="../../contact.html">Contact</a></li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main role="main">
+      
+      <div class="uk-container">
+        <div class="uk-section">
+          
+          <!-- <h1>index</h1> -->
+          <h1 id="cryptography-engineering-m2">Cryptography Engineering (M2)</h1>
+<h2 id="cm">CM</h2>
+<ul>
+<li>CM 1: <a href="./crypto_eng_cm_01.pdf">Security definitions and proof methods</a> (with <a href="https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2025_2026_-_Crypto_eng/crypto_eng_cm_01-metadata.mp4">the (few) animations</a>, use Chrome)</li>
+</ul>
+<h2 id="td">TD</h2>
+<ul>
+<li>TD 1: <a href="./crypto_eng_td_01.pdf">Proof methods and OT/PRF/PRG</a></li>
+</ul>
+          
+        </div>
+      </div>
+      
+    </main>
+
+    <footer class="uk-section uk-section-secondary">
+      <div class="uk-container">
+        <div class="uk-grid-divider uk-child-width-expand@s monospace" uk-grid>
+          <div>
+            <h1>Contact</h1>
+            <p>
+              <span uk-icon="mail"></span> <a href="mailto:leo[dot]colisson-palais[at]universite-grenoble-alpes.fr">leo [dot] colisson [at] ens-paris-saclay.fr</a><br />
+              <span class="uk-icon">
+                <!-- Must include the source code inline, not really any other option possible: https://stackoverflow.com/questions/28213417/how-to-set-a-external-svg-color-in-html-using-css
+                     Maybe I should also compile them directly in uikit https://getuikit.com/docs/custom-icons
+                -->
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="5.3632022090854345mm" height="4.996699450807062mm" viewBox="0 0 5.3632022090854345 4.996699450807062">
+  <g transform="translate(2.527165,0.052580) scale(1,-1)">
+    <path d="M 2.7834564113772373 -1.9440123798009028 L 2.7834564113772373 -3.9036770000000494 L 2.3039427069772156 -3.9036770000000494 L 2.3039427069772156 -2.2659348796278485 A 0.24125 0.24125 0 0 1 1.93601 -2.06063L 0.0 -3.25525 L -2.4745849700790714 -1.7282914138837524 L 0.0 0.0 L 2.4745849700790714 -1.7282914138837524 L 2.7834564113772373 -1.9440123798009028 Z "></path>
+    <path d="M -1.5553011745777066 -3.139457899251116 L 0.0 -4.099166501393894 L 1.5553011745777066 -3.139457899251116 L 1.5553011745777066 -3.9318300210351587 L 0.0 -4.8915386231779365 L -1.5553011745777066 -3.9318300210351587 L -1.5553011745777066 -3.139457899251116 Z "></path>
+  </g>
+</svg>
+
+              </span>
+              <a href="https://scholar.google.com/citations?user=w2ZPqAcAAAAJ">Google Scholar</a><br />
+              <span uk-icon="github"></span> <a href="https://github.com/leo-colisson">Github for science</a><br />
+              <span uk-icon="github"></span> <a href="https://github.com/tobiasBora">Github for code</a><br />
+              <span uk-icon="linkedin"></span> <a href="https://www.linkedin.com/in/leo-colisson">LinkedIn</a>
+            </p>
+          </div>
+          <div>
+            <h1>About this website</h1>
+            <p>
+              <span uk-icon="code"></span> This website is built with <a href="https://jaspervdj.be/hakyll/">Hakyll</a>, a static website generator written in Haskell. It is still a work in progress, but I would be very grateful if you report me any mistake/typography.
+            </p>
+            <p>
+              <span uk-icon="github"></span> The sources of this website are available on <a href="https://github.com/leo-colisson/website">Github</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
