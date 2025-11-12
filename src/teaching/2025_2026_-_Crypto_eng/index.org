@@ -5,6 +5,7 @@
 - CM 1: [[./crypto_eng_cm_01.pdf][Security definitions and proof methods]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2025_2026_-_Crypto_eng/crypto_eng_cm_01-metadata.mp4][the (few) animations]], use a recent browser)
 - CM 2: [[./crypto_eng_cm_02.pdf][Symmetric encryption]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2025_2026_-_Crypto_eng/crypto_eng_cm_02-metadata.mp4][the (few) animations]], use a recent browser)
 - CM 3: [[../2024_2025_-_Crypto_eng/crypto_eng_03_hash_functions.pdf][Hash functions]] (with [[https://leo-colisson.github.io/blenderpoint-web/index.html?video=https://leo.colisson.me/teaching/2024_2025_-_Crypto_eng/crypto_eng_03_hash_functions-metadata.mp4][the (few) animations]], use a recent browser)
+- CM 4: [[./crypto_eng_cm_04.pdf][MAC]] 
 
 ** TD
 - TD 1: [[./crypto_eng_td_01.pdf][Proof methods]]
