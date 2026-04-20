@@ -14,7 +14,7 @@
 - TD 1: [[./crypto_csi_td_01.pdf][Méthodes de preuve et OT/PRF/PRG]]
 - TD 2: [[./crypto_csi_td_02.pdf][Sécurité IND-CPA]]
 - TD 3: [[./crypto_csi_td_03.pdf][Fonctions de hash]]
-- TD 6: https://inriamecsci.github.io/cryptris/ et [[./capture_the_flag_merkle_hellman.txt][capture the flag]]
+- TD 6: https://inriamecsci.github.io/cryptris/ et deux versions: 1) [[./capture_the_flag_merkle_hellman.txt][capture the flag]] 2) essayer de casser le niveau arcade de cryptris avec clé publique (astuce : faire un script qui utilise LLL !)
 
 - Nombreux exercices dans les slides directement.
 
